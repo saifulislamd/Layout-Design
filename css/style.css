@@ -1,0 +1,162 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --header-font:  "Oswald", sans-serif;
+    --primary-font: "Montserrat", sans-serif;
+    --primary-color: rgb(22, 140, 250); 
+    --secondary-color: rgb(36, 36, 36);
+
+}
+
+body{
+    font-family: var(--primary-font);
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: var(--header-font);
+}
+
+img{
+    max-width: 100%;
+    background-color: aquamarine;
+    display: block;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn{
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    padding: 12px 25px;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    font-size: 24px;
+    transition-duration: 0.4s;
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+    
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column_1_2{
+    flex-basis: 50%;
+    max-width: 50%;
+    padding: 15px;
+}
+
+.column_1_3{
+    flex-basis: 33%;
+    max-width: 33%;
+    padding: 15px;
+}
+
+.justify_end{
+justify-content:flex-end;
+}
+
+.justify_center{
+    justify-content: center
+
+}
+
+.align-center{
+    align-items: center;
+}
+/* heroSection CSS */
+.heroSection{
+    background-image: url(../images/bg\ image.png);
+    height: 100vh;
+    background-size: cover;
+    background-color: rgb(129, 129, 253);
+    background-position: top center;
+    background-blend-mode: normal;
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    color:rgb(246, 255, 255);
+    font-size: 70px;
+    font-weight: 900;
+    line-height: 1.2;
+    
+   
+}
+
+.heroSection p{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    margin: 20px 0 40px;
+    
+}
+
+.heroSection .container{
+    max-width: 800px;
+    text-align: center;
+}
+
+/* gallerySection CSS */
+.gallerySection{
+    padding: 100px 0;
+}
+
+h2{
+
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.imageBox{
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.imageBox:hover img{
+    transform:scale(1.1);
+
+}
+
+.imageBox img{
+    transition-duration: 0.4s;
+   
+
+}
+.imageText{
+    background-color: #e7e5e5;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.imageText h3{
+    font-size: 23px;
+    color: var(--primary-color)
+}
+
+.imageText p{
+    font-size: 18px;
+    margin-top: 15px;
+
+}
